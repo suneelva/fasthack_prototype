@@ -1,0 +1,24 @@
+{
+  "name": "donationapp-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.1.0",
+    "@material-ui/icons": "^1.1.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0",
+    "react-modal": "^3.4.5",
+    "react-scripts": "1.1.4",
+    "react-stripe-checkout": "^2.6.3",
+    "reactstrap": "^6.0.1",
+    "searchkit": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
