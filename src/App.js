@@ -38,7 +38,7 @@ const styles = theme => ({
   },
   paper: {
     padding: theme.spacing.unit * 2,
-    textAlign: 'center',
+    textAlign: 'left',
     color: theme.palette.text.secondary,
   },
 });
@@ -56,7 +56,8 @@ class App extends Component {
                 prefixQueryFields={[
                   "campaignEntry.name",
                   "campaignEntry.organization.name",
-                  "campaignEntry.cause_tags.name"
+                  "campaignEntry.cause_tags.name",
+                  "campaignEntry.activists.name"
                 ]}
               />
             </TopBar>
@@ -83,7 +84,7 @@ class App extends Component {
                 <RefinementListFilter
                   id="activists"
                   title="Activists"
-                  field="name"
+                  field="campaignEntry.activists.name.keyword"
                   operator="AND"
                   size={10}
                 />
