@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Grid from '@material-ui/core/Grid';
 import CampaignItem from "./CampaignItem";
-
+import CampaignModal from "./CreateCampaign";
 import {
   SearchkitManager,
   SearchkitProvider,
@@ -90,11 +90,11 @@ class App extends Component {
                 />
               </SideBar>
               <LayoutResults>
+              <CampaignModal buttonLabel="Create Campaign"/>
                 <ActionBar>
                   <ActionBarRow>
                     <HitsStats />
                   </ActionBarRow>
-
                   <ActionBarRow>
                     <SelectedFilters />
                     <ResetFilters />
